@@ -2,9 +2,10 @@ package project_test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-public class StudentRecord implements Comparable{
+public class StudentRecord{
 
 	int regNo;
 	String Name;
@@ -28,7 +29,7 @@ public class StudentRecord implements Comparable{
 		stud.add(new StudentRecord(1232467, "Flen"));
 		stud.add(new StudentRecord(1232430, "Dlen"));
 		
-		Collections.sort(stud);
+		Collections.sort(stud, new Sortbyregno());
 		
 		System.out.println("After sorting...");
 		for(int i=0; i<stud.size();i++) {
@@ -36,10 +37,10 @@ public class StudentRecord implements Comparable{
 		}
 	}
 
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return this.regNo = ((StudentRecord)o).regNo;
-		}
+}
+class Sortbyregno implements Comparator<StudentRecord> {
+	public int compare(StudentRecord a, StudentRecord b) {
+		return a.regNo - b.regNo;
 	}
+}
 
