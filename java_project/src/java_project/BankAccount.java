@@ -1,4 +1,4 @@
-package project_test;
+package java_project;
 
 public class BankAccount {
 	public static void main(String[] args) {
