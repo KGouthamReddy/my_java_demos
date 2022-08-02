@@ -1,4 +1,4 @@
-package project_test;
+package java_project;
 import java.util.*;
 
 public class calculator {

@@ -1,0 +1,19 @@
+For this project 
+
+The algoithm is explained in a step by step manner to show the program works.
+
+step 1: Giving the options to write 'w', read 'r' and append 'a' the text to a sample file.
+
+step 2: Reading the input (w, r, a) from console using Scanner.
+
+step 3: Using if-else condition for reading the characters and applying the methods to the input.
+
+step 4: creating a method of writing which takes text input in the format of String and output to a text file.
+
+step 5: giving the options to write or exit using if-else and then using FileWriter() appending the text to the file.
+
+step 6: catching the exception if occurs.
+
+step 7: for Reading, create a class and check whether the sample file exist, if yes then using BufferReader read the entire text in the file and paste it on the console.
+
+step 8: using try catch block for handling the exceptions.
